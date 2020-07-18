@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header header-main">
+      <div class="header-main__menu menu">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="" alt="Логотип Поехали">
+        </a>
+
+        <label class="visually-hidden" for="burger">Бургер</label>
+        <input class="menu__burder" type="checkbox" name="" id="burger">
+
+        <div class="burger-popup burger-popup--open menu__burger-popup">
+          <ul class="burger-popup__list">
+            <li class="burger-popup__item">
+              <a class="burger-popup__link" href="index.html">О сервисе</a>
+            </li>
+            <li class="burger-popup__item">
+              <a class="burger-popup__link" href="directions.html">Направления</a>
+            </li>
+            <li class="burger-popup__item">
+              <a class="burger-popup__link">Попутчики</a>
+            </li>
+          </ul>
+          <a class="button button--primary burger-popup__btn-auth" href="/auth">Авторизация</a>
+          <div class="burger-popup__contacts">
+            <a class="burger-popup__tel" href="tel:88005558628">8 800 555-86-28</a>
+            <a class="burger-popup__email" href="mailto:mail.htmlacademy.ru">mail.htmlacademy.ru</a>
+          </div>
+          <ul class="socials burger-popup__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="www.facebook.com">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="www.vk.com">VK</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="www.instagram.com">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <h1 class="title companions-header">Попутчики</h1>
+      <div class="country-filter">
+        <h2 class="country-filter__title">Фильтрация по странам</h2>
+        <button class="country-filter__button" type="button"></button>
+        <div class="country-filter-dropdown country-filter__country-filter-dropdown">
+          <ul class="continents country-filter-dropdown__continents">
+            <li class="continents__item">Европа</li>
+            <li class="continents__item">Азия</li>
+            <li class="continents__item">Америка</li>
+            <li class="continents__item">острова</li>
+          </ul>
+
+          <ul class="words country-filter-dropdown__words">
+            <li class="words__item words__item--current">А</li>
+            <li class="words__item">Б</li>
+            <li class="words__item">В</li>
+            <li class="words__item">Г</li>
+            <li class="words__item">Д</li>
+            <li class="words__item">Е</li>
+            <li class="words__item">З</li>
+            <li class="words__item">И</li>
+            <li class="words__item">К</li>
+            <li class="words__item">Л</li>
+            <li class="words__item">М</li>
+            <li class="words__item">Н</li>
+            <li class="words__item">О</li>
+            <li class="words__item">П</li>
+            <li class="words__item">Р</li>
+            <li class="words__item">С</li>
+            <li class="words__item">Т</li>
+            <li class="words__item">У</li>
+            <li class="words__item">Ф</li>
+            <li class="words__item">Х</li>
+            <li class="words__item">Ч</li>
+            <li class="words__item">Ш</li>
+            <li class="words__item">Щ</li>
+            <li class="words__item">Э</li>
+            <li class="words__item">Ю</li>
+          </ul>
+
+          <ul class="countries country-filter-dropdown__countries">
+            <li class="countries__item">Австралия</li>
+            <li class="countries__item">Австрия</li>
+            <li class="countries__item">Азербайджа</li>
+            <li class="countries__item">Албания</li>
+            <li class="countries__item">Алжир</li>
+            <li class="countries__item">Ангола</li>
+            <li class="countries__item">Андорра</li>
+            <li class="countries__item">Антигуа и Барбуда</li>
+            <li class="countries__item">Аргентина</li>
+            <li class="countries__item">Армения</li>
+            <li class="countries__item">Афганистан</li>
+          </ul>
+
+          <button>Свернуть</button>
+        </div>
+      </div>
+      <div class="companions">
+        <div class="companions__wrap">
+          <div class="companions-filter companions__companions-filter">
+            <h2 class="companions-filter__title">Подберите
+              идеального
+              попутчика</h2>
+
+            <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="POST">
+              <ul class="companions-filter__list">
+                <li class="filter-field companions-filter__item">
+                  <div class="filter-field__header-wrap">
+                    <h3 class="filter-field__header">хобби</h3>
+                    <button class="filter-field__btn"></button>
+                  </div>
+                  <div class="filter-field__box">
+                    <!-- пока непонятно -->
+                  </div>
+                </li>
+
+                <li class="filter-field companions-filter__item">
+                  <div class="filter-field__header-wrap">
+                    <h3 class="filter-field__header">музыка</h3>
+                    <button class="filter-field__btn"></button>
+                  </div>
+                  <ul class="filter-music filter-field__box">
+                    <li class="filter-music__item">
+                      <input class="filter-music__input" type="checkbox" name="music" id="musicHardRock" checked value="hardRock">
+                      <label class="filter-music__label" for="musicHardRock">Тяжелый рок</label>
+                    </li>
+                    <li class="filter-music__item">
+                      <input class="filter-music__input" type="checkbox" name="music" id="musicRusRap" checked value="rusRap">
+                      <label class="filter-music__label" for="musicRusRap">Русский рэп</label>
+                    </li>
+                    <li class="filter-music__item">
+                      <input class="filter-music__input" type="checkbox" name="music" id="musicEuroDance" value="euroDance">
+                      <label class="filter-music__label" for="musicEuroDance">Евроденс</label>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="filter-field companions-filter__item">
+                  <div class="filter-field__header-wrap">
+                    <h3 class="filter-field__header">еда</h3>
+                    <button class="filter-field__btn"></button>
+                  </div>
+                  <div class="filter-field__box">
+                    <!-- пока непонятно -->
+                  </div>
+                </li>
+
+                <li class="filter-field companions-filter__item">
+                  <div class="filter-field__header-wrap">
+                    <h3 class="filter-field__header">транспорт</h3>
+                    <button class="filter-field__btn"></button>
+                  </div>
+                  <ul class="filter-transport filter-field__box">
+                    <li class="filter-transport__item">
+                      <input class="filter-transport__input" type="checkbox" name="transport" id="transnportPlane" checked value="plane">
+                      <label class="filter-transport__label" for="transnportPlane">
+                        <!-- icon -->
+                      </label>
+                    </li>
+                    <li class="filter-transport__item">
+                      <input class="filter-transport__input" type="checkbox" name="transport" id="transnportBus" checked value="bus">
+                      <label class="filter-transport__label" for="transnportBus">
+                        <!-- icon -->
+                      </label>
+                    </li>
+                    <li class="filter-transport__item">
+                      <input class="filter-transport__input" type="checkbox" name="transport" id="transnportBicycle" value="bicycle">
+                      <label class="filter-transport__label" for="transnportBicycle">
+                        <!-- icon -->
+                      </label>
+                    </li>
+                    <li class="filter-transport__item">
+                      <input class="filter-transport__input" type="checkbox" name="transport" id="transnportRun" checked value="run">
+                      <label class="filter-transport__label" for="transnportRun">
+                        <!-- icon -->
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="filter-field companions-filter__item">
+                  <div class="filter-field__header-wrap">
+                    <h3 class="filter-field__header">Левел</h3>
+                    <button class="filter-field__btn"></button>
+                  </div>
+                  <div class="filter-field__box">
+                    <div class="range">
+                      <div class="range__inputs-wrap">
+                        <label class="range__label">
+                          <input class="range__input range__input--min-level" type="text" name="minLevel">
+                        </label>
+                        <label class="range__label">
+                          <input class="range__input range__input--max-level" type="text" name="maxLevel">
+                        </label>
+                      </div>
+
+                      <div class="range__track">
+                        <button class="range__left" type="button"></button>
+                        <div class="range__indicator"></div>
+                        <button class="range__right" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="companions__btn-show" type="submit">Показать</button>
+            </form>
+          </div>
+
+          <div class="companions-card companions__companions-card">
+            <article class="companions-card__item">
+              <div class="user-info companions-card__user-info">
+                <div class="user-info__avatar-wrap">
+                  <img class="user-info__avatar" src="" alt="userpic">
+                </div>
+                <div class="user-info__box">
+                  <h3 class="user-info__username">
+                    Таня  Фирсова
+                    <!-- status -->
+                  </h3>
+                  <div class="favorites user-info__favorites">
+                    <span class="visually-hidden">Favorites</span>
+                    <div class="favorites__icon-wrap">
+                      <!-- svg -->
+                      <img class="favorites__icon favorites__icon--selected" src="" alt="favorites icon">
+                    </div>
+                    <b class="favorites__value">1,5 М</b>
+                  </div>
+                  <ul class="hashtags user-info__hashtegs">
+                    <!-- Мб сделать хэш через before -->
+                    <li class="hashtags__item">#ЗОЖ</li>
+                    <li class="hashtags__item">#ПП</li>
+                    <li class="hashtags__item">#Фитнес</li>
+                    <li class="hashtags__item">#пляж</li>
+                    <li class="hashtags__item">#авокадо</li>
+                    <li class="hashtags__item">#смузи</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-params companions-card__user-params">
+                <ul class="user-params__list">
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">хочет посетить:</h3>
+                    <div class="user-params__data">
+                      <ul class="user-countries user-params__user-countries">
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Шри-ланка</p>
+                        </li>
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Тайланд</p>
+                        </li>
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Сейшелы</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">транспорт:</h3>
+                    <div class="user-params__data">
+                      <ul class="travels user-params__travels">
+                        <li class="travels__item">
+                          <span class="visually-hidden">Plane</span>
+                          <!-- svg -->
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="plane">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bus</span>
+                          <img class="travels__variant-image" src="" alt="bus">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bicycle</span>
+                          <img class="travels__variant-image" src="" alt="bicycle">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Run</span>
+                          <img class="travels__variant-image" src="" alt="run">
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">левел:</h3>
+                    <div class="user-params__data">
+                      <div class="rating user-params__rating">
+                        <b class="rating__value">99</b>
+                        <!-- Мб сделаю через before -->
+                        <!-- будет скрываема -->
+                        <span class="rating__text">level</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a class="companions-card__btn-go" href="">Позвать!</a>
+            </article>
+
+            <article class="companions-card__item">
+              <div class="user-info companions-card__user-info">
+                <div class="user-info__avatar-wrap">
+                  <img class="user-info__avatar" src="" alt="userpic">
+                </div>
+                <div class="user-info__box">
+                  <h3 class="user-info__username">
+                    Петя Демин
+                    <!-- status -->
+                  </h3>
+                  <div class="favorites user-info__favorites">
+                    <span class="visually-hidden">Favorites</span>
+                    <div class="favorites__icon-wrap">
+                      <!-- svg -->
+                      <img class="favorites__icon" src="" alt="favorites icon">
+                    </div>
+                    <b class="favorites__value">1500</b>
+                  </div>
+                  <ul class="hashtags user-info__hashtegs">
+                    <!-- Мб сделать хэш через before -->
+                    <li class="hashtags__item">#бургер</li>
+                    <li class="hashtags__item">#баг</li>
+                    <li class="hashtags__item">#футбол</li>
+                    <li class="hashtags__item">#концерт</li>
+                    <li class="hashtags__item">#крафт</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-params companions-card__user-params">
+                <ul class="user-params__list">
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">хочет посетить:</h3>
+                    <div class="user-params__data">
+                      <ul class="user-countries user-params__user-countries">
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Бельгия</p>
+                        </li>
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Чехия</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">транспорт:</h3>
+                    <div class="user-params__data">
+                      <ul class="travels user-params__travels">
+                        <li class="travels__item">
+                          <span class="visually-hidden">Plane</span>
+                          <!-- svg -->
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="plane">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bus</span>
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="bus">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bicycle</span>
+                          <img class="travels__variant-image" src="" alt="bicycle">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Run</span>
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="run">
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">левел:</h3>
+                    <div class="user-params__data">
+                      <div class="rating user-params__rating">
+                        <b class="rating__value">80</b>
+                        <!-- Мб сделаю через before -->
+                        <!-- будет скрываема -->
+                        <span class="rating__text">level</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a class="companions-card__btn-go" href="">Позвать!</a>
+            </article>
+
+            <article class="companions-card__item">
+              <div class="user-info companions-card__user-info">
+                <div class="user-info__avatar-wrap">
+                  <img class="user-info__avatar" src="" alt="userpic">
+                </div>
+                <div class="user-info__box">
+                  <h3 class="user-info__username">
+                    Марк Смолов
+                    <!-- status -->
+                  </h3>
+                  <div class="favorites user-info__favorites">
+                    <span class="visually-hidden">Favorites</span>
+                    <div class="favorites__icon-wrap">
+                      <!-- svg -->
+                      <img class="favorites__icon" src="" alt="favorites icon">
+                    </div>
+                    <b class="favorites__value">170</b>
+                  </div>
+                  <ul class="hashtags user-info__hashtegs">
+                    <!-- Мб сделать хэш через before -->
+                    <li class="hashtags__item">#рэп</li>
+                    <li class="hashtags__item">#тату</li>
+                    <li class="hashtags__item">#хайпбист</li>
+                    <li class="hashtags__item">#кроссвки</li>
+                    <li class="hashtags__item">#суприм</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-params companions-card__user-params">
+                <ul class="user-params__list">
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">хочет посетить:</h3>
+                    <div class="user-params__data">
+                      <ul class="user-countries user-params__user-countries">
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Сша</p>
+                        </li>
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Австралия</p>
+                        </li>
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Доминика</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">транспорт:</h3>
+                    <div class="user-params__data">
+                      <ul class="travels user-params__travels">
+                        <li class="travels__item">
+                          <span class="visually-hidden">Plane</span>
+                          <!-- svg -->
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="plane">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bus</span>
+                          <img class="travels__variant-image" src="" alt="bus">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bicycle</span>
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="bicycle">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Run</span>
+                          <img class="travels__variant-image" src="" alt="run">
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">левел:</h3>
+                    <div class="user-params__data">
+                      <div class="rating user-params__rating">
+                        <b class="rating__value">25</b>
+                        <!-- Мб сделаю через before -->
+                        <!-- будет скрываема -->
+                        <span class="rating__text">level</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a class="companions-card__btn-go" href="">Позвать!</a>
+            </article>
+
+            <article class="companions-card__item">
+              <div class="user-info companions-card__user-info">
+                <div class="user-info__avatar-wrap">
+                  <img class="user-info__avatar" src="" alt="userpic">
+                </div>
+                <div class="user-info__box">
+                  <h3 class="user-info__username">
+                    Лариса Роговая
+                    <!-- status -->
+                  </h3>
+                  <div class="favorites user-info__favorites">
+                    <span class="visually-hidden">Favorites</span>
+                    <div class="favorites__icon-wrap">
+                      <!-- svg -->
+                      <img class="favorites__icon" src="" alt="favorites icon">
+                    </div>
+                    <b class="favorites__value">23</b>
+                  </div>
+                  <ul class="hashtags user-info__hashtegs">
+                    <!-- Мб сделать хэш через before -->
+                    <li class="hashtags__item">#образование</li>
+                    <li class="hashtags__item">#карьера</li>
+                    <li class="hashtags__item">#учеба</li>
+                    <li class="hashtags__item">#линкедин</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-params companions-card__user-params">
+                <ul class="user-params__list">
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">хочет посетить:</h3>
+                    <div class="user-params__data">
+                      <ul class="user-countries user-params__user-countries">
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Великобритания</p>
+                        </li>
+                        <li class="user-countries__item">
+                          <img class="user-countries__flag" src="" alt="Флаг страны">
+                          <p class="user-countries__country">Германия</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">транспорт:</h3>
+                    <div class="user-params__data">
+                      <ul class="travels user-params__travels">
+                        <li class="travels__item">
+                          <span class="visually-hidden">Plane</span>
+                          <!-- svg -->
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="plane">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bus</span>
+                          <img class="travels__variant-image travels__variant-image--active" src="" alt="bus">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Bicycle</span>
+                          <img class="travels__variant-image" src="" alt="bicycle">
+                        </li>
+                        <li class="travels__item">
+                          <span class="visually-hidden">Run</span>
+                          <img class="travels__variant-image" src="" alt="run">
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="user-params__item">
+                    <h3 class="user-params__title">левел:</h3>
+                    <div class="user-params__data">
+                      <div class="rating user-params__rating">
+                        <b class="rating__value">50</b>
+                        <!-- Мб сделаю через before -->
+                        <!-- будет скрываема -->
+                        <span class="rating__text">level</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a class="companions-card__btn-go" href="">Позвать!</a>
+            </article>
+
+            <div class="companions__btn-wrap">
+              <a class="companions__btn-show-more" href="/show-more">
+                <!-- TODO icon -->
+                Показать ещё
+              </a>
+            </div>
+
+            <div class="pagination companions__pagination">
+              <button class="pagination__control pagination__control--prev"></button>
+              <!-- TODO будет список -->
+              <button class="pagination__control pagination__control--next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page__footer">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="" alt="Логотип Поехали">
+      </a>
+      <ul class="socials">
+        <!--li a svg -->
+        <li class="socials__item socials__item--special">
+          <a class="socials__link" href="www.facebook.com">Facebook</a>
+        </li>
+        <li class="socials__item socials__item--special">
+          <a class="socials__link" href="www.vk.com">VK</a>
+        </li>
+        <li class="socials__item socials__item--special">
+          <a class="socials__link" href="www.instagram.com">Instagram</a>
+        </li>
+      </ul>
+      <div class="footer__developed">
+        <p class="footer__developed-text">Разработано</p>
+        <a class="footer__developed-link" href="">
+          <span class="visually-hidden">HTML Academy</span>
+          <!-- svg -->
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
